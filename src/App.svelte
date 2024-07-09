@@ -17,7 +17,7 @@ const handleNameInput=(event=>{
 <input bind:value={name} type="text" class="input input-secondary">
 <p>My name is: {name}</p>
 <hr>
-
+ 
 {#if showTable}
 <table class="table table-lg">
   <thead>
