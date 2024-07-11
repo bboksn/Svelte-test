@@ -1,9 +1,14 @@
 <script>
 let name = ''
 let showTable = true;
+/*
 const handleNameInput=(event=>{
   name = event.target.value;
 })
+*/
+
+
+let devices = [{id:1, name:'Device1'},{id:2,name:'Device2'},{id:3,name:'Device3'},{id:4,name:'Device4'}]
 </script>
 
 <main>
@@ -27,9 +32,10 @@ const handleNameInput=(event=>{
 </thead>
 <tbody>
   <tr>
-    <td>item 1</td>
-    <td>item 2</td>
-    <td>itme 3</td>
+    {#each devices as device}
+      <td>{device.name}</td>
+    {/each}
+    
   </tr>
 </tbody>
 </table>
