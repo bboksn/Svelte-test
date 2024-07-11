@@ -14,7 +14,7 @@ const handleNameInput=(event=>{
   <p on:click={()=>showTable=!showTable} class="btn btn-primary">Hide Table</p>
   {/if}
 
-<input bind:value={name} type="text" class="input input-secondary">
+<input placeholder="Input Name" bind:value={name} type="text" class="input input-secondary">
 <p>My name is: {name}</p>
 <hr>
  
